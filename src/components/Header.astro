@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="/"><strong>HECL</strong><span>Yonsei University</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="/#research">Research</a>
+      <a href="/people">People</a>
+      <a href="/publications">Publications</a>
+      <a href="/projects">Projects</a>
+      <a href="/news">News</a>
+      <a href="/join">Join Us</a>
+    </nav>
+  </div>
+</header>
+<style>
+.header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: flex; align-items: baseline; gap: 10px; }
+.brand strong { font-size: 1.2rem; letter-spacing: .04em; }
+.brand span { color: var(--muted); font-size: .9rem; }
+nav { display: flex; gap: 20px; font-size: .93rem; font-weight: 650; }
+nav a:hover { color: var(--accent); }
+@media (max-width: 900px) { nav { display: none; } }
+</style>

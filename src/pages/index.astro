@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Hydrology & EcoClimate Lab · Yonsei University</p>
+      <h1>Understanding water, climate, and ecosystems through science and AI.</h1>
+      <p class="lead">We study hydrologic, ecological, and climate processes and develop predictive approaches that integrate physical understanding, observations, and machine learning.</p>
+      <a class="button" href="#research">Explore our research</a>
+    </div>
+  </section>
+
+  <section id="research" class="section alt">
+    <div class="container">
+      <p class="eyebrow">Research</p>
+      <h2>Connecting process understanding with prediction</h2>
+      <div class="grid cards">
+        <article class="card"><h3>Hydroclimate Extremes</h3><p>Floods, droughts, and climate-driven changes in water systems across scales.</p></article>
+        <article class="card"><h3>AI for Hydrology</h3><p>Machine learning and differentiable modeling for robust hydrologic prediction.</p></article>
+        <article class="card"><h3>Ecohydrology & Carbon</h3><p>Interactions among water, vegetation, ecosystems, and greenhouse-gas dynamics.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div><p class="eyebrow">About HECL</p><h2>Research across water, climate, ecosystems, and computation</h2></div>
+      <p class="lead">HECL combines theory, observation, process-based modeling, and data-driven methods to understand environmental change and improve prediction and decision support.</p>
+    </div>
+  </section>
+</BaseLayout>
+<style>
+.hero { min-height: 78vh; display: flex; align-items: center; padding: 96px 0; background: linear-gradient(135deg, #eef5f6 0%, #ffffff 58%); }
+.hero .lead { margin-bottom: 30px; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+@media (max-width: 820px) { .split { grid-template-columns: 1fr; gap: 20px; } }
+</style>
