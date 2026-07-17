@@ -1,6 +1,10 @@
 <header class="header">
   <div class="container nav">
-    <a class="brand" href="/"><strong>HECL</strong><span>Yonsei University</span></a>
+    <a href="/" class="brand">
+      <span class="logo">HECL</span>
+      <span class="subtitle">Hydrology &amp; EcoClimate Lab</span>
+    </a>
+
     <nav aria-label="Primary navigation">
       <a href="/#research">Research</a>
       <a href="/people">People</a>
@@ -11,13 +15,81 @@
     </nav>
   </div>
 </header>
+
 <style>
-.header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-.nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.brand { display: flex; align-items: baseline; gap: 10px; }
-.brand strong { font-size: 1.2rem; letter-spacing: .04em; }
-.brand span { color: var(--muted); font-size: .9rem; }
-nav { display: flex; gap: 20px; font-size: .93rem; font-weight: 650; }
-nav a:hover { color: var(--accent); }
-@media (max-width: 900px) { nav { display: none; } }
+.header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  min-height:82px;
+}
+
+.brand{
+  display:flex;
+  flex-direction:column;
+  text-decoration:none;
+  line-height:1;
+}
+
+.logo{
+  font-size:1.9rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  color:var(--ink);
+}
+
+.subtitle{
+  margin-top:6px;
+  font-size:.78rem;
+  font-weight:500;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+nav{
+  display:flex;
+  gap:32px;
+}
+
+nav a{
+  font-size:.95rem;
+  font-weight:600;
+  color:var(--ink);
+  text-decoration:none;
+  transition:color .2s ease;
+}
+
+nav a:hover{
+  color:var(--accent);
+}
+
+@media (max-width:900px){
+
+  .nav{
+    min-height:72px;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .logo{
+    font-size:1.65rem;
+  }
+
+  .subtitle{
+    font-size:.72rem;
+  }
+
+}
 </style>
